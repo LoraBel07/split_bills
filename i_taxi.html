@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_taxi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&family=Tourney:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Do you have a bill or a total amount for gas? Let's Split!</h1>
+        <form>
+            <div class="amount">
+            <p>Bill amount:</p>
+            <span> <input type="text" id= "bill" placeholder="Write bill amount ($)...">
+            </span>
+            </div>
+            
+            <div class="amount">
+            <p>Number of people:</p>
+            <span> <input type="text" id="people" placeholder="How many people ...">
+            </span>
+            </div>            
+            
+            <p><img src="https://img.icons8.com/dusk/35/000000/tip.png"/> What about tips for a taxi driver?</p>
+            <button id="addTip">Add a Tip!</button>
+            <select id="tip">
+                <option disabled>Select an option</option>
+                <option value="0.30">WOW! 30% 🥇</option>
+                <option value="0.20">Good service! 20% 🤝</option>
+                <option value="0.10">It was OK. 10% ✅</option>
+                <option value="0.00" selected>No tip! 🤦</option>
+
+            </select>
+            <button id="btn">Calculate</button>
+        </form>
+        <div id="showTotalAmountToPay">
+            <!-- #1 -->
+            <div id="billSplit">
+                <p>Bill per person:</p>
+                <span>$</span>
+                <span id="dividedBill"></span>
+                <!-- <span>per person</span> -->
+            </div>
+            <!-- #2 -->
+            <div id="totalTip">
+                <p>Tip per person:</p>
+                <span>$</span>
+                <span id="dividedTip"></span>
+                <!-- <span>per person</span> -->
+            </div>
+            <!-- #3 -->
+            <div id="totalAmount">
+                <p>Total per person:</p>
+                <span>$</span>
+                <span id="billAndTip"></span>
+                <!-- <span>per person</span> -->
+            </div>
+        </div>
+        <div class="close">
+            <button class="btnClose"><img src="https://img.icons8.com/bubbles/57/000000/process.png" alt="reload"></button>
+        </div>
+    </div>
+
+    <div class="goback">
+        <a href="index.html"><img src="https://img.icons8.com/dusk/64/000000/circled-left-2.png"/></a>
+    </div>
+
+
+
+
+
+    <canvas id="my-canvas"></canvas>
+
+    <script src="index.min.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>

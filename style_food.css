@@ -1,0 +1,210 @@
+body {
+    background-image: url(food_bckg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: #f8ddbf;
+
+}
+#container {
+    background: #e9d0b3c2;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    width: 750px;
+    height: 800px;
+    border-radius: 40px;
+    color: purple;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+h1 {
+    background: linear-gradient(to left, #09881a, #720580, #296b75);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Tourney', cursive;
+    align-self: center;
+    font-size: 37px;
+}
+input {
+    font-family: 'Sora', sans-serif;
+    color: purple;
+    padding: 10px;
+    font-size: 20px;    
+}
+#addTip {
+    background: linear-gradient(to left, #15aabeab, #7205809d, #296b75af);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+#btn {
+    background: linear-gradient(to left, #15aabeab, #7205809d, #296b75af);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+#tip {
+    font-family: 'Sora', sans-serif;
+    display: none;
+}
+#showTotalAmountToPay {
+    display: flex; 
+    justify-content: space-around;   
+}
+#billSplit, #totalTip, #totalAmount {
+    font-family: 'Sora', sans-serif;
+    background-color: rgba(132, 175, 150, 0.671);
+    color: white;
+    margin: 20px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    flex: 1;
+}
+
+#dividedBill, #dividedTip, #billAndTip {
+    font-size: 33px;
+}
+
+.amount {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;  
+}
+.goback {
+    display: flex;   
+    justify-content: space-evenly;    
+    margin: 10px;
+}
+
+/* confetti and refresh */
+
+.close {
+    display: flex;
+    justify-content: center;    
+}
+
+.btnClose {
+    border-radius: 50%;
+    border: rgb(146, 107, 146) 3px solid;
+    width: 72px;
+    height: 70px;
+    background-color: rgba(205, 222, 233, 0.836);
+}
+
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 63vh;
+    z-index: 100000;
+    visibility: hidden;
+
+}
+#my-canvas.active {
+    visibility: visible;
+}
+
+@media (max-width: 1030px) {
+    body {
+        background-image: url(food-bckg2.jpg);
+    }
+    #container {
+        margin-left: 120px;
+    }
+    #my-canvas {
+        height: 52vh;        
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(food-bckg2.jpg);
+    }
+    #container {
+        margin-left: 0px;
+        width: auto;
+        height: 810px;
+    }
+    #my-canvas {
+        height: 57vh;        
+    }
+}
+@media (max-width: 600px) {
+    body {
+        background-image: url(food_bckg4.jpg);       
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-x;        
+    }
+    h1 {
+        font-size: 20px;
+        margin-left: 18px;
+    }
+    .amount {
+        font-size: 23px;
+        flex-direction: column;
+    }
+    input {
+        padding: 10px;
+        font-size: 15px;    
+    }
+    #container {
+        width: auto;
+        height: auto;
+    }
+    #showTotalAmountToPay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #dividedBill, #dividedTip, #billAndTip {
+        font-size: 20px;
+    }
+    #btn {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        flex:auto;        
+    }
+
+}
+
+@media (max-width: 330px) {
+    #container {
+        width: auto;
+        height: max-content;
+    }
+    #showTotalAmountToPay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        margin: 5px;
+        padding: 10px;
+        font-size: 10px;
+        flex:auto;        
+    }
+}

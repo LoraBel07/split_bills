@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✈️ Travels</title>
+    <link rel="stylesheet" href="style_travel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&family=Tourney:ital,wght@0,600;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>Let's Split our Costs!</h1>
+        <form>
+            <div class="amount">
+            <p>            
+            Tour cost:</p>
+            <span> <input type="text" id= "bill" placeholder="Write the cost of the trip ($)...">
+            </span>
+            </div>
+
+            <div class="amount">
+                <p>            
+                Insurance:</p>
+                <span> <input type="text" id= "insur" placeholder="Write insurance amount ($)...">
+                </span>
+            </div>
+
+            <div class="amount">
+                <p>            
+                Tips (cleaning, housing, assistance):</p>
+                <span> <input type="text" id= "tips" placeholder="Write tips amount ($)...">
+                </span>
+            </div>
+            
+            <div class="amount">
+            <p>            
+            Number of people:</p>
+            <span> <input type="text" id="people" placeholder="How many people ...">
+            </span>
+            </div>
+                        
+            <button id="btn">Calculate</button>
+        </form>
+
+        <div id="showTotalAmountToPay">
+            
+            <div id="totalAmount">
+                <p>Total per person:</p>
+                <span>$</span>
+                <span id="billAndTip"></span>                
+            </div>
+        </div>
+        <div class="close">
+            <button class="btnClose"><img src="https://img.icons8.com/bubbles/57/000000/process.png" alt="reload"></button>
+        </div>
+    </div>
+
+    <div class="goback">
+        <a href="index.html"><img src="https://img.icons8.com/dusk/64/000000/circled-left-2.png"/></a>
+    </div>
+
+    <canvas id="my-canvas"></canvas>
+
+    <script src="index.min.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="scriptT.js"></script>
+</body>
+</html>

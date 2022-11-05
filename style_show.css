@@ -1,0 +1,205 @@
+body {
+    background-image: url(show2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: right;
+    background-color: #005792;
+}
+#containerG {
+    background: #097fceb9;
+    display:flex;
+    flex-direction: column;    
+    margin-left: 80px;
+    width: 700px;
+    height: auto;
+    border-radius: 40px;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+}
+h1 {
+    /* color: white; */
+    background: linear-gradient(to left, hotpink, white, pink);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: 'Tourney', cursive;
+    align-self: center;
+    font-size: 40px;
+    margin-left: 20px;
+}
+input {
+    font-family: 'Sora', sans-serif;
+    color: black;
+    padding: 10px;
+    font-size: 20px;    
+}
+
+#btnG {
+    background: linear-gradient(to left, rgba(109, 47, 109, 0.712), rgba(0, 0, 255, 0.692), rgba(134, 4, 26, 0.678));
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+#tip {
+    font-family: 'Sora', sans-serif;
+    display: none;
+}
+#showTotalAmountToPay {
+    display: flex; 
+    flex-direction: column;
+    align-self: center;
+}
+#totalAmount {
+    font-family: 'Sora', sans-serif;
+    background-color: rgba(132, 175, 150, 0.726);
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid white;  
+    width: 200px; 
+}
+
+#billAndTip {
+    font-size: 33px;
+}
+
+.amountG {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;  
+}
+
+.goback {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* confetti and refresh */
+
+.close {
+    display: flex;
+    justify-content: center;    
+}
+
+.btnClose {
+    border-radius: 50%;
+    border: rgb(245, 243, 245) 2px solid;
+    width: 67px;
+    height: 63px;
+    background-color: rgba(132, 175, 150, 0.753);
+}
+
+#my-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 63vh;
+    z-index: 100000;
+    visibility: hidden;
+
+}
+#my-canvas.active {
+    visibility: visible;
+}
+
+@media (max-width: 1030px) {
+    body {
+        background-image: url(show3.jpg);
+        background-position: center;
+    }
+    #containerG {
+        margin-left: 80px;
+        width: 850px;
+        height: auto;
+    }
+    #my-canvas {
+        height: 52vh;        
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(show3.jpg);
+        background-position: center;
+    }
+    #containerG {
+        margin-left: 0px;
+        width: auto;
+        height: 810px;
+    }
+}
+@media (max-width: 600px) {
+    body {
+        background-image: url(show3.jpg); 
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        width: auto;          
+    } 
+    h1 {
+        font-size: 20px;
+        margin-left: 18px;
+    }
+    .amountG {
+        font-size: 23px;
+        flex-direction: column;
+    }
+    input {
+        padding: 10px;
+        font-size: 15px;    
+    }
+    #containerG {
+        width: auto;
+        height: max-content;
+    }
+    #showTotalAmountToPay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #billAndTipG {
+        font-size: 20px;
+    }
+    #btn {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    #billSplit, #totalTip, #totalAmount {
+        margin: 5px;
+        padding: 5px;
+        font-size: 15px;
+        flex:auto;        
+    }
+
+}
+
+@media (max-width: 330px) {
+    #containerG {
+        width: auto;
+        height: max-content;
+    }
+    #showTotalAmountToPay {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #totalAmount {
+        margin: 5px;
+        padding: 10px;
+        font-size: 10px;
+        flex:auto;        
+    }
+}
