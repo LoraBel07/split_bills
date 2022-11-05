@@ -20,9 +20,8 @@ function calculateAmount(e) {
             text: 'Please enter your information!'
         })
     }
-    let sumBill = +bill + +insur + +tips;    
-
-    console.log(sumBill);
+    let sumBill = +bill + +insur + +tips;
+    
     let totalSum = sumBill/people;
 
     

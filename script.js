@@ -39,16 +39,13 @@ function calculateAmount(e) {
     }
 
     // how much for 1 person _ _ _
-    let amountPerPerson = bill/people;
-    //console.log(amountPerPerson);
+    let amountPerPerson = bill/people;    
 
     // how much tips for 1 person _ _ _
-    let tipPerPerson = (bill*tip)/people;
-    //console.log(tipPerPerson);
+    let tipPerPerson = (bill*tip)/people;    
 
     // how much all money for 1 person _ _ _
-    let totalSum = amountPerPerson + tipPerPerson;
-    //console.log(totalSum);
+    let totalSum = amountPerPerson + tipPerPerson;    
 
     // toFixed() _ _ _
     amountPerPerson = amountPerPerson.toFixed(2);

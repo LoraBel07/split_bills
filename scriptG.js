@@ -17,13 +17,11 @@ function calculateAmountG(e) {
             icon: 'error',
             title: 'Error!',
             text: 'Please enter your information!'
-        })
+        });
     }
-    let sumBillG = +billG + +billAddG;    
-
-    // console.log(sumBillG);
+    let sumBillG = +billG + +billAddG;
+    
     let totalSumG = sumBillG/peopleG;
-
     
     totalSumG = totalSumG.toFixed(2);
 
