@@ -1,5 +1,5 @@
 body {
-    background-image: url(gift4.jpg);
+    background-image: url(pic/gift4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -114,7 +114,7 @@ input {
 
 @media (max-width: 1030px) {
     body {
-        background-image: url(gift4.jpg);
+        background-image: url(pic/gift4.jpg);
     }
     #containerG {
         margin-left: 160px;
@@ -134,7 +134,7 @@ input {
 }
 @media (max-width: 600px) {
     body {
-        background-image: url(gift4.jpg); 
+        background-image: url(pic/gift4.jpg); 
         background-size: cover;
         background-position: center;
         height: 100vh;

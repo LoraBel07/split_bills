@@ -1,5 +1,5 @@
 body {
-    background-image: url(taxi.jpg);
+    background-image: url(pic/taxi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -124,10 +124,7 @@ input {
     visibility: visible;
 }
 
-@media (max-width: 1030px) {
-    /* body {
-        background-image: url(food-bckg2.jpg);
-    } */
+@media (max-width: 1030px) {    
     #container {
         margin-left: 160px;
     }
@@ -136,10 +133,7 @@ input {
     }
 }
 
-@media (max-width: 800px) {
-    /* body {
-        background-image: url(food-bckg2.jpg);
-    } */
+@media (max-width: 800px) {    
     #container {
         margin-left: 0px;
         width: auto;
@@ -148,7 +142,7 @@ input {
 }
 @media (max-width: 600px) {
     body {
-        background-image: url(taxi2.jpg); 
+        background-image: url(pic/taxi2.jpg); 
         background-size: cover;
         background-position: center;
         height: 100vh;

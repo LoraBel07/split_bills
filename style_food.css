@@ -1,5 +1,5 @@
 body {
-    background-image: url(food_bckg1.jpg);
+    background-image: url(pic/food_bckg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -125,7 +125,7 @@ input {
 
 @media (max-width: 1030px) {
     body {
-        background-image: url(food-bckg2.jpg);
+        background-image: url(pic/food-bckg2.jpg);
     }
     #container {
         margin-left: 120px;
@@ -137,7 +137,7 @@ input {
 
 @media (max-width: 800px) {
     body {
-        background-image: url(food-bckg2.jpg);
+        background-image: url(pic/food-bckg2.jpg);
     }
     #container {
         margin-left: 0px;
@@ -150,7 +150,7 @@ input {
 }
 @media (max-width: 600px) {
     body {
-        background-image: url(food_bckg4.jpg);       
+        background-image: url(pic/food_bckg4.jpg);       
         background-size: cover;
         background-position: center;
         background-repeat: repeat-x;        

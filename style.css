@@ -1,5 +1,5 @@
 body {
-    background-image: url(base.png);
+    background-image: url(pic/base.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -11,11 +11,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Tourney', cursive;
-    /* font-size: 50px;
-    background: linear-gradient(to left, #aa4b6b, #3b8d99);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; */
+    font-family: 'Tourney', cursive;    
 }
 .navigation {
     position: fixed;
@@ -115,7 +111,7 @@ body {
     right: 40px;
     width: 40px;
     height: 40px;
-    background: url(menu.png);
+    background: url(pic/menu.png);
     z-index: 1000;
     background-size: 40px;
     background-repeat: no-repeat;
@@ -123,7 +119,7 @@ body {
     cursor: pointer;
 }
 .menuToggle.active {
-    background: #3b8c9944 url(close.png);
+    background: #3b8c9944 url(pic/close.png);
     z-index: 1000;
     background-size: 42px;
     background-repeat: no-repeat;

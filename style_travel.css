@@ -1,5 +1,5 @@
 body {
-    background-image: url(travel.jpg);
+    background-image: url(pic/travel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
@@ -118,10 +118,7 @@ input {
     visibility: visible;
 }
 
-@media (max-width: 1030px) {
-    body {
-        background-image: url(travel.jpg);
-    }
+@media (max-width: 1030px) {    
     #container {
         margin-left: 110px;
     }
@@ -130,10 +127,7 @@ input {
     }
 }
 
-@media (max-width: 800px) {
-    body {
-        background-image: url(travel.jpg);
-    }
+@media (max-width: 800px) {    
     #container {
         margin-left: 0px;
         width: auto;
@@ -141,8 +135,7 @@ input {
     }
 }
 @media (max-width: 600px) {
-    body {
-        background-image: url(travel.jpg);       
+    body {              
         background-size: cover;
         height: 100vh;
         width: auto;            
