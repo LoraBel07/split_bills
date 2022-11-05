@@ -35,7 +35,7 @@ function calculateAmount(e) {
             icon: 'error',
             title: 'Error!',
             text: 'Please enter your information!'
-        })
+        });
     }
 
     // how much for 1 person _ _ _
